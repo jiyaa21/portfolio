@@ -403,6 +403,34 @@ scroll-behavior: smooth;
 section{
 scroll-margin-top:80px;
 }
+      @media (max-width: 768px) {
+
+  .firstsection,
+  .about-container,
+  .project {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .firstsection > div,
+  .leftsection1,
+  .rightsection1,
+  .project-left,
+  .project-middle,
+  .project-right {
+    width: 100%;
+  }
+
+  .rightsection img {
+    width: 60%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
 
     </style>
   </head>
