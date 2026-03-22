@@ -432,15 +432,7 @@ scroll-margin-top:80px;
   background: rgb(170, 107, 228);
   border-radius: 50%;
 }
-      /* .thirdsection,
-.fourthsection,
-.fifthsection,
-.sixthsection {
-  padding: 80px 0;
-} 
-main hr {
-  margin: 60px 0;
-} */
+    
 
 /* content */
 .timeline-item .content h3 {
@@ -466,6 +458,36 @@ main hr {
 }
       .secondsection {
   padding: 80px 0;
+}
+      main hr {
+  border: 0;
+  background: #9c97f1;
+  height: 1.2px;
+  margin: 40px 0;   /* 🔥 FIX */
+}
+      @media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .left {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
 }
       
     </style>
