@@ -431,7 +431,62 @@ scroll-margin-top:80px;
   }
 
 }
+.timeline {
+  position: relative;
+  margin-top: 50px;
+  padding-left: 20px;
+}
 
+/* vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: white;
+}
+
+/* each item */
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 30px;
+}
+
+/* dots */
+.timeline-item .dot {
+  position: absolute;
+  left: -2px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background: rgb(170, 107, 228);
+  border-radius: 50%;
+}
+
+/* content */
+.timeline-item .content h3 {
+  margin-bottom: 5px;
+}
+
+.timeline-item .content p {
+  color: gray;
+}
+      @media (max-width: 768px) {
+  .timeline {
+    padding-left: 15px;
+  }
+
+  .timeline-item {
+    padding-left: 25px;
+  }
+}
+    
+.timeline-item .dot {
+  box-shadow: 0 0 10px rgba(170,107,228,0.8);
+}
     </style>
   </head>
   <body>
@@ -671,53 +726,56 @@ scroll-margin-top:80px;
 </section>
 
 <hr/>
-      <section class="secondsection" data-aos="fade-up">
-        <span class="text-gray">What I have done so far</span>
-        <h1> Experience & Learnings</h1>
-        <div class="box">
-          <div class="vertical">
-            <img class="image-top" src="developer-png.png" >
-            <div class="vertical-title">
-                Smart India Hackathon
-            </div>
-            <div class="vertical-desc">
-                Developed the complete frontend for an Ayurvedic web application dashboard using React.js.
-               
-            </div>
-          </div>
-          <div class="vertical">
-            <img class="image-top" src="developer-png.png" >
-            <div class="vertical-title">
-                Walmart Sparkathon
-            </div>
-            <div class="vertical-desc">
-                Collaborated in a team to build a smart inventory management system using Python and OpenCV.
-            </div>
-          </div>
-          <div class="vertical">
-            <img class="image-top" src="developer-png.png" >
-            <div class="vertical-title">
-                Deloitte Hacksploison
-            </div>
-            <div class="vertical-desc">
-                Led a team to develop an AI-powered financial workbook for intelligent data analysis. 
-            </div>
-          </div>
-          <div class="vertical">
-            <img class="image-top" src="developer-png.png" >
-            <div class="vertical-title">
-             Pre Incubation(MUJ)
-            </div>
-            <div class="vertical-desc">
-                Our project “Cancer Care” was selected for pre-incubation at AIC-MUJ.
-            </div>
-          
-         
-          </div>
-          <div class="vertical"></div>
-        </div>
-      </section>
+      
+            
+         <section id="experience" class="secondsection" data-aos="fade-up">
+  <span class="text-gray">WHAT I HAVE DONE SO FAR</span>
+  <h1>Experience & Learnings</h1>
 
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="dot"></div>
+      <div class="content">
+        <h3>Smart India Hackathon</h3>
+        <p>
+          Developed the complete frontend for an Ayurvedic web application dashboard using React.js.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="dot"></div>
+      <div class="content">
+        <h3>Walmart Sparkathon</h3>
+        <p>
+          Collaborated in a team to build a smart inventory management system using Python and OpenCV.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="dot"></div>
+      <div class="content">
+        <h3>Deloitte Hacksplosion</h3>
+        <p>
+          Led a team to develop an AI-powered financial workbook for intelligent data analysis.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="dot"></div>
+      <div class="content">
+        <h3>Pre Incubation (MUJ)</h3>
+        <p>
+          Our project “Cancer Care” was selected for pre-incubation at AIC-MUJ.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
       <hr/>
 
       <!-- <section id="Contact me" class="sixthsection" data-aos="fade-up">
